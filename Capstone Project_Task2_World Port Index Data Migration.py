@@ -65,7 +65,7 @@ table_result
 from sqlalchemy import create_engine
 
 def save_to_database(table_result):
-    engine = create_engine('postgresql://postgres:Mysong123@localhost:5432/World_Port_Index')
+    engine = create_engine('postgresql://postgres:Mypassword@localhost:5432/World_Port_Index')
     table_result.to_sql('Wpi Data', con=engine, schema='public', if_exists='replace')
 
 # Call the function and pass the 'table_result' DataFrame as an argument
@@ -86,7 +86,7 @@ def connect_to_database():
     conn = psycopg2.connect(
         dbname="World_Port_Index",
         user="postgres",
-        password="Mysong123",
+        password="Mypassword",
         host="localhost",
         port="5432"
     )
@@ -109,7 +109,7 @@ def connect_to_database():
     conn = psycopg2.connect(
         dbname="World_Port_Index",
         user="postgres",
-        password="Mysong123",
+        password="Mypassword",
         host="localhost",
         port="5432"
     )
@@ -150,7 +150,7 @@ def find_nearest_ports_to_jurong_island():
     conn = psycopg2.connect(
         dbname="World_Port_Index",
         user="postgres",
-        password="Mysong123",
+        password="Mypassword",
         host="localhost",
         port="5432"
     )
@@ -202,7 +202,7 @@ def country_with_largest_cargo_wharf_ports():
     conn = psycopg2.connect(
         dbname="World_Port_Index",
         user="postgres",
-        password="Mysong123",
+        password="Mypassword",
         host="localhost",
         port="5432"
     )
@@ -248,7 +248,7 @@ def find_nearest_provision_ports(latitude, longitude):
     conn = psycopg2.connect(
         dbname="World_Port_Index",
         user="postgres",
-        password="Mysong123",
+        password="Mypassword",
         host="localhost",
         port="5432"
     )
