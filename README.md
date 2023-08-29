@@ -35,13 +35,12 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
 
 ## Establish Connection to Access Database:
     Create a function to establish a connection to the Microsoft Access database.
-
-    * Get Table Names from Access Database:
-    * Retrieve the list of table names from the Access database and print them.
-    * Read World Port Index Data Table Using Pandas DataFrame:
-    * Define a function to query the "Wpi Data" table from the Access database and store the result in a Pandas DataFrame.
-    * Load DataFrame into PostgreSQL Database:
-    * Use the sqlalchemy library to load the DataFrame into the PostgreSQL database.
+    Get Table Names from Access Database:
+    Retrieve the list of table names from the Access database and print them.
+    Read World Port Index Data Table Using Pandas DataFrame:
+    Define a function to query the "Wpi Data" table from the Access database and store the result in a Pandas DataFrame.
+    Load DataFrame into PostgreSQL Database:
+    Use the sqlalchemy library to load the DataFrame into the PostgreSQL database.
 
 ## Connect to PostgreSQL Database for Querying:
     Define functions to establish a connection to the PostgreSQL database and run SQL queries.
@@ -65,6 +64,7 @@ The PostgreSQL database acts as a centralized repository for easy access and ana
 
 ## Conclusion
 In conclusion, the GoFrieghts Data Migration Project provides an overview of the steps or process for extracting data from the Access database, loading it into a PostgreSQL database, and executing specific queries for analysis.
-Contribution and Feedback
+
+## Contribution and Feedback
 
 Contributions are welcome to enhance and extend this EL pipeline further. Feel free to submit pull requests, raise issues, or provide feedback to help us improve the project.
