@@ -5,9 +5,7 @@
 - [Objective](#objective)
 - [Instructions](#instructions)
 - [How it Works](#how-it-works)
-- [Data Extraction](#data-extraction)
-- [Loading the Data](#loading-the-data)
-- [SQL Queries Analysis and Result Explanation](#sql-queries-analysis-and-result-explanation)
+- [SQL Queries Analysis](#sql-queries-analysis)
 - [Requirements](#requirements)
 - [Conclusion](#conclusion)
 - [Contribution and Feedback](#contribution-and-feedback)
@@ -26,16 +24,12 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
 
 ## How it Works
 ## 1. Install Necessary Python Modules:
-   Ensure you have the required Python modules installed. This can be achieved using the following code snippet: 
-   python 3.x.x
-   
-   from sqlalchemy import create_engine
- 
-   from time import time
-   
-   import pyodbc
-   
-   import pandas as pd
+   Ensure you have the required Python modules installed. This can be achieved using the following. 
+   - python 3.x.x
+   - from sqlalchemy import create_engine
+   - from time import time
+   - import pyodbc
+   - import pandas as pd
 
 ## 2. Establish Connection to Access Database:
     Create a function to establish a connection to the Microsoft Access database name WPI.mdb.
@@ -50,7 +44,7 @@ To load the Wpi dataframe to postgres database, The loading was done using pytho
 "to_sql" command,was used to load the DataFrame named table_result to PostgreSQL databases.
 
 ## 5. SQL Queries Analysis and Result Explanation
-The PostgreSQL database acts as a centralized repository for easy access and analysis. The python libraries psycopg2 and pandas were used to establish a database connection to read the table named 'Wpi Data' in PostgreSQL databases, Jupyter web-based interactive development environment, was used SQL queries, and analysis, to the already connected databse,thus  providing the ability to run SQL queries directly within the Jupyter Notebook environment, enhancing the ability to work with databases interactively in your notebooks.
+The PostgreSQL database acts as a centralized repository for easy access and analysis. The python libraries psycopg2 and pandas were used to establish a database connection to read the table named 'Wpi Data' in PostgreSQL databases, Jupyter web-based interactive development environment, was used to run SQL queries, and analysis, to the already connected databse,thus  providing and the enhancing to ability to run SQL queries directly on the databases, and to work with databases interactively in your notebooks.
 
 ## Requirements
     Python 3.x
