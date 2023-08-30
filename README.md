@@ -27,32 +27,26 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
 ## How it Works
 1. Install Necessary Python Modules:
    Ensure you have the required Python modules installed. This can be achieved using the following code snippet: 
-   ```python
+   python 3.x.x
    from sqlalchemy import create_engine
    from time import time
    import pyodbc
    import pandas as pd
 
 ## Establish Connection to Access Database:
-    Create a function to establish a connection to the Microsoft Access database.
-    Get Table Names from Access Database:
-    Retrieve the list of table names from the Access database and print them.
-    Read World Port Index Data Table Using Pandas DataFrame:
-    Define a function to query the "Wpi Data" table from the Access database and store the result in a Pandas DataFrame.
-    Load DataFrame into PostgreSQL Database:
-    Use the sqlalchemy library to load the DataFrame into the PostgreSQL database.
-
-## Connect to PostgreSQL Database for Querying:
-    Define functions to establish a connection to the PostgreSQL database and run SQL queries.
+    Create a function to establish a connection to the Microsoft Access database name WPI.mdb.
+    the function also Retrieve the list of table names from the Access database and print them.
 
 ## Data Extraction
-The data extraction was done with Python, using the python libraries pyodbc, which enables a connection to the Microsoft Access database, and thus reading and printing out all the tables in the World Port Index data database.
+The data extraction was done with Python, using the python libraries pyodbc, which enables a connection to the Microsoft Access database, 
+and thus enable  Retrieving  the list of all table names from the Access database, once that was done we procceded to exract the data from one of the table named "Wpi Data" into a pandas dataframe
 
 ## Loading the Data
-The data loading was done with Python, using two python libraries sqlalchemy and psycopg2 to interact with an already created PostgreSQL database. The sqlalchemy import create_engine was used to establish a database connection to load the DataFrame named table_result to PostgreSQL databases using the to_sql function to write the table_result DataFrame to a table named 'Wpi Data' in the connected database.
+To load the Wpi dataframe to postgres database, The loading was done using python sqlalchemy libraries, the import create_engine command was used to establish a database connection to postgres, and 
+"to_sql" command,was used to load the DataFrame named table_result to PostgreSQL databases.
 
 ## SQL Queries Analysis and Result Explanation
-The PostgreSQL database acts as a centralized repository for easy access and analysis. The python libraries psycopg2 and pandas were used to establish a database connection to read the table named 'Wpi Data' in PostgreSQL databases, enabling the running of SQL queries within the Jupyter Notebook Environment with the help of the ipython-sql and psycopg2 python libraries. This connection provides the ability to run SQL queries directly within the Jupyter Notebook environment, enhancing the ability to work with databases interactively in your notebooks.
+The PostgreSQL database acts as a centralized repository for easy access and analysis. The python libraries psycopg2 and pandas were used to establish a database connection to read the table named 'Wpi Data' in PostgreSQL databases, Jupyter web-based interactive development environment, was used SQL queries, and analysis, to the already connected databse,thus  providing the ability to run SQL queries directly within the Jupyter Notebook environment, enhancing the ability to work with databases interactively in your notebooks.
 
 ## Requirements
     Python 3.x
