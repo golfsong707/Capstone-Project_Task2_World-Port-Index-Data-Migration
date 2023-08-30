@@ -25,27 +25,31 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
 - Find the Nearest Port with Provisions, Water, Fuel, and Diesel.
 
 ## How it Works
-## 1.Install Necessary Python Modules:
+## 1. Install Necessary Python Modules:
    Ensure you have the required Python modules installed. This can be achieved using the following code snippet: 
    python 3.x.x
+   
    from sqlalchemy import create_engine
+ 
    from time import time
+   
    import pyodbc
+   
    import pandas as pd
 
-2.   ## Establish Connection to Access Database:
+## 2. Establish Connection to Access Database:
     Create a function to establish a connection to the Microsoft Access database name WPI.mdb.
     the function also Retrieve the list of table names from the Access database and print them.
 
-## Data Extraction
+## 3. Data Extraction
 The data extraction was done with Python, using the python libraries pyodbc, which enables a connection to the Microsoft Access database, 
 and thus enable  Retrieving  the list of all table names from the Access database, once that was done we procceded to exract the data from one of the table named "Wpi Data" into a pandas dataframe
 
-## Loading the Data
+## 4. Loading the Data
 To load the Wpi dataframe to postgres database, The loading was done using python sqlalchemy libraries, the import create_engine command was used to establish a database connection to postgres, and 
 "to_sql" command,was used to load the DataFrame named table_result to PostgreSQL databases.
 
-## SQL Queries Analysis and Result Explanation
+## 5. SQL Queries Analysis and Result Explanation
 The PostgreSQL database acts as a centralized repository for easy access and analysis. The python libraries psycopg2 and pandas were used to establish a database connection to read the table named 'Wpi Data' in PostgreSQL databases, Jupyter web-based interactive development environment, was used SQL queries, and analysis, to the already connected databse,thus  providing the ability to run SQL queries directly within the Jupyter Notebook environment, enhancing the ability to work with databases interactively in your notebooks.
 
 ## Requirements
