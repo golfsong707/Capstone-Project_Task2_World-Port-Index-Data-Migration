@@ -25,7 +25,7 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
 - Find the Nearest Port with Provisions, Water, Fuel, and Diesel.
 
 ## How it Works
-1. Install Necessary Python Modules:
+## 1.Install Necessary Python Modules:
    Ensure you have the required Python modules installed. This can be achieved using the following code snippet: 
    python 3.x.x
    from sqlalchemy import create_engine
@@ -33,7 +33,7 @@ Construct an Extract Load (EL) pipeline in Python to transition the World Port I
    import pyodbc
    import pandas as pd
 
-## Establish Connection to Access Database:
+2.   ## Establish Connection to Access Database:
     Create a function to establish a connection to the Microsoft Access database name WPI.mdb.
     the function also Retrieve the list of table names from the Access database and print them.
 
